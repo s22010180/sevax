@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart'; // We will create this next
+import 'home_screen.dart';
+import 'signin_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -24,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // Navigate to Home and remove Splash from the stack
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => const HomeScreen()),
+      MaterialPageRoute(builder: (context) => const SignInScreen()),
     );
   }
 
