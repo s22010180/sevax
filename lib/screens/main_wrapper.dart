@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart'; // Import your home screen file
+import 'booking_screen.dart';
 
 class MainWrapper extends StatefulWidget {
   const MainWrapper({super.key});
@@ -17,8 +18,8 @@ class _MainWrapperState extends State<MainWrapper> {
   // When it's 1, it shows the "Search" placeholder, and so on.
   final List<Widget> _pages = [
     const HomeScreen(),
-    const Center(child: Text("Search Page")),
-    const Center(child: Text("Bookings Page")),
+    const BookingScreen(child: Text("Search Page")),
+    const BookingScreen(),
     const Center(child: Text("Account Page")),
   ];
 
