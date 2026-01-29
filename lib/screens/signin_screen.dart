@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'signup_screen.dart';
 import 'main_wrapper.dart';
+import 'forgot_password_screen.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -39,7 +40,8 @@ class _SignInScreenState extends State<SignInScreen> {
               const SizedBox(height: 10),
               Align(
                 alignment: Alignment.centerRight,
-                child: TextButton(onPressed: () {}, child: const Text("Forgot Password?")),
+                child: TextButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotPasswordScreen()))
+                , child: const Text("Forgot Password?")),
               ),
               const SizedBox(height: 30),
 
