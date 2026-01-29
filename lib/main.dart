@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/main_wrapper.dart'; // Make sure the path is correct
+import 'screens/main_wrapper.dart';
 
 void main() {
   runApp(const SevaX());
@@ -13,7 +13,6 @@ class SevaX extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'SevaX',
-      // The 'home' property defines the first screen the user sees after the Splash
       home: const MainWrapper(), 
     );
   }
