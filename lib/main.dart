@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/main_wrapper.dart';
+import 'screens/splash_screen.dart';
 
 void main() {
   runApp(const SevaX());
@@ -13,7 +14,7 @@ class SevaX extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'SevaX',
-      home: const MainWrapper(), 
+      home: const SplashScreen(), 
     );
   }
 }
